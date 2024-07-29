@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+      }
+      header {
+        background-color: #1d2a35;
+        width: 100%;
+        height: 50px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        /* display: inline-block; */
+      }
+      #logo {
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+        /* display: inline-block; */
+        display: flex;
+      }
+      #nav {
+        color: white;
+        margin: 7px;
+        padding-left: 35px;
+      }
+      input {
+        border-radius: 8px;
+        padding-left: 10px;
+        margin: 6px;
+        margin-left: 20px;
+        height: 20px;
+      }
+      #plus {
+        /* margin-left: 400px; */
+        color: white;
+        margin: 7px 7px 7px 300px;
+        padding-left: 35px;
+      }
+      #header2 {
+        background-color: #1d2a35;
+        width: 100%;
+        height: 40px;
+        display: flex;
+      }
+      #nav1 {
+        color: white;
+        margin: 7px;
+        padding-left: 35px;
+        font-size: 15px;
+      }
+      #wave {
+        background-color: #282a35;
+        /* background: rgb(2,0,36); */
+        /* background: linear-gradient(187deg, rgba(2,0,36,1) 0%, rgba(73,24,144,0.8739145316329657) 35%, rgba(0,212,255,1) 100%); */
+        width: 100%;
+        height: 550px;
+      }
+      #wave p {
+        color: white;
+        font-size: 80px;
+        padding: 50px 0px 0px 0px;
+      }
+      #caption {
+        color: #fff49c;
+        font-size: 50px;
+        padding: 50px 0px 0px 0px;
+      }
+      #wave input {
+        width: 400px;
+        height: 50px;
+        padding-left: 30px;
+        border-radius: 70px;
+        margin-top: 20px;
+      }
+      #question {
+        color: white;
+        font-size: 30px;
+      }
+      #wave2 {
+        background-color: #d9eee1;
+        width: 100%;
+        height: 700px;
+      }
+      #wave2 > p {
+        font-size: 100px;
+        font-weight: 750;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding-top: 100px;
+        padding-left: 200px;
+      }
+      #div2 > p {
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 30px;
+        padding-left: 150px;
+      }
+      button {
+        width: 150px;
+        height: 50px;
+        border-radius: 30px;
+        margin-top: 30px;
+        margin-left: 250px;
+      }
+      /* img{
+        display: inline-block;
+        width: 100px;
+      } */
+      body {
+      background-color: black;
+    }
+    #php {
+      background-color: pink;
+      width: 500px;
+      height: 220px;
+      padding: 20px;
+      border-radius: 5px;
+      margin: 80px;
+      display: inline-block;
+    }
+    h2 {
+      padding-top: 20px;
+      font-size: 30px;
+    }
+    /* b {
+      padding-left: 90px;
+    } */
+
+    .buttonbox {
+      background-color: rgb(32, 31, 31);
+      border-radius: 20px;
+      color: white;
+      margin-top: 30px  ;
+      margin-left: 10px;
+      padding: 10px ;
+    }
+    #jQuery {
+      background-color: rgb(226, 226, 123);
+      width: 500px;
+      height: 220px;
+      padding: 20px;
+      border-radius: 5px;
+      margin: 100px;
+      display: inline-block;
+    }
+    #Java {
+      background-color: rgb(198, 198, 182);
+      width: 500px;
+      height: 220px;
+      padding: 20px;
+      border-radius: 5px;
+      margin: 80px;
+      display: inline-block;
+    }
+    #C {
+      background-color: rgb(214, 255, 179);
+      width: 500px;
+      height: 220px;
+      padding: 20px;
+      border-radius: 5px;
+      margin: 80px;
+      display: inline-block;
+    }
+    #w3 {
+      background-color: rgb(151, 218, 231);
+      width: 500px;
+      height: 220px;
+      padding: 20px;
+      border-radius: 5px;
+      margin: 80px;
+      display: inline-block;
+    }
+    #Bootstrap {
+      background-color: rgb(226, 250, 254);
+      width: 500px;
+      height: 220px;
+      padding: 20px;
+      border-radius: 5px;
+      margin: 80px;
+      display: inline-block;
+    }
+
+    .lang {
+      background-color: pink;
+      width: 600px;
+      height: 100px;
+      display: inline-block;
+      margin: 60px;
+      border-radius: 9px;
+      padding-top: 40px;
+    }
+    .box {
+      background-color: blanchedalmond;
+      width: 300px;
+      height: 80px;
+      border-radius: 10px;
+      padding-top: 20px;
+      display: inline-block;
+      margin: 30px;
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img src="W3Schools_logo.svg" alt="" />
+        <br /><br />
+        <p id="nav">Tutorials</p>
+        <p id="nav">Exercises</p>
+        <p id="nav">Certificates</p>
+        <p id="nav">Services</p>
+        <form action="">
+          <input type="text" placeholder="Search..." />
+        </form>
+        <p id="plus">Plus</p>
+        <p id="nav">Spaces</p>
+        <p id="nav">GetCertified</p>
+        <p id="nav">Signup</p>
+        <p id="nav">Signin</p>
+      </div>
+      <div id="header2">
+        <p id="nav1" style="padding-left: 5px">HTML</p>
+        <p id="nav1">CSS</p>
+        <p id="nav1">JAVASCRIPT</p>
+        <p id="nav1">SQL</p>
+        <p id="nav1">PYTHON</p>
+        <p id="nav1">JAVA</p>
+        <p id="nav1">PHP</p>
+        <p id="nav1">HOW TO</p>
+        <p id="nav1">W3.CSS</p>
+        <p id="nav1">C</p>
+        <p id="nav1">C++</p>
+        <p id="nav1">C#</p>
+        <p id="nav1">BOOTSTRAP</p>
+        <p id="nav1">REACT</p>
+        <p id="nav1">MYSQL</p>
+        <p id="nav1">XML</p>
+      </div>
+      <div id="wave">
+        <center><p>Learn To Code</p></center>
+        <center>
+          <span id="caption">With a world's largest web developer site.</span>
+        </center>
+        <form action="">
+          <center>
+            <input type="search" placeholder="Search our Tutorials, e.g.HTML" />
+          </center>
+        </form>
+        <br />
+        <br />
+        <br />
+
+        <center>
+          <span id="question"><u>Not Sure Where To Being?</u></span>
+        </center>
+      </div>
+      <div id="wave2">
+        <p>HTML</p>
+        <div id="div2">
+          <p>The language for building web pages</p>
+        </div>
+        <button style="background-color: #04aa6d; color: white;"><b>Learn HTML</b></button>
+        <br />
+        <button style="background-color: #fff4a3;"><b>Video Tutorial</b></button>
+        <br />
+
+        <button style="background-color: #282a35; color:white"><b>HTML Reference</b></button>
+        <br />
+        <button style="background-color: #ffc0c7;"><b>Get Certified</b></button>
+        <!-- <aside>
+        <img src="Screenshot 2024-07-27 233113.png" alt="">
+
+        </aside> -->
+      </div>
+      <div id="wave2" style="background-color: #fff49c;">
+        <p>CSS</p>
+        <div id="div2">
+          <p>The language for styling the webpage</p>
+        </div>
+        <button style="background-color: #04aa6d; color: white;"><b>Learn CSS</b></button>
+        <br />
+        <button style="background-color: #fff4a3;"><b>Video Tutorial</b></button>
+        <br />
+
+        <button style="background-color: #282a35; color:white"><b>CSS Reference</b></button>
+        <br />
+        <button style="background-color: #ffc0c7;"><b>Get Certified</b></button>
+        <!-- <aside>
+        <img src="Screenshot 2024-07-27 233113.png" alt="">
+
+        </aside> -->
+      </div>
+      <div id="wave2" style="background-color: #0d1721;">
+        <p style="color: white;font-size: 70px; ">JAVASCRIPT</p>
+        <div id="div2">
+          <p style="color: white;">The language for building web pages</p>
+        </div>
+        <button style="background-color: #04aa6d; color: white;"><b>Learn JS</b></button>
+        <br />
+        <button style="background-color: #fff4a3;"><b>Video Tutorial</b></button>
+        <br />
+
+        <button style="background-color: #282a35; color:white"><b>JS Reference</b></button>
+        <br />
+        <button style="background-color: #ffc0c7;"><b>Get Certified</b></button>
+        <!-- <aside>
+        <img src="Screenshot 2024-07-27 233113.png" alt="">
+
+        </aside> -->
+      </div>
+      <div id="wave2" style="background-color: #f3ecea;">
+        <p style="font-size: 70px; ">PYTHON</p>
+        <div id="div2">
+          <p>A popular programming language</p>
+        </div>
+        <button style="background-color: #04aa6d; color: white;"><b>Learn PYTHON</b></button>
+        <br />
+        <button style="background-color: #fff4a3;"><b>Video Tutorial</b></button>
+        <br />
+
+        <button style="background-color: #282a35; color:white"><b>PYTHON Reference</b></button>
+        <br />
+        <button style="background-color: #ffc0c7;"><b>Get Certified</b></button>
+        <!-- <aside>
+        <img src="Screenshot 2024-07-27 233113.png" alt="">
+
+        </aside> -->
+      </div>
+      <div id="wave2" style="background-color: #96d4d4;">
+        <p>SQL</p>
+        <div id="div2">
+          <p>A language for accessing databases</p>
+        </div>
+        <button style="background-color: #04aa6d; color: white;"><b>Learn SQL</b></button>
+        <br />
+        <button style="background-color: #fff4a3;"><b>Video Tutorial</b></button>
+        <br />
+
+        <button style="background-color: #282a35; color:white"><b>SQL Reference</b></button>
+        <br />
+        <button style="background-color: #ffc0c7;"><b>Get Certified</b></button>
+        <!-- <aside>
+        <img src="Screenshot 2024-07-27 233113.png" alt="">
+
+        </aside> -->
+      </div>
+
+      <div id="php">
+        <center><h2>PHP</h2></center>
+        <br>
+        <center><b> A web server programming language</b></center>
+        <center><button class="buttonbox">Learn PHP</button></center>
+      </div>
+      <div id="jQuery">
+        <center>
+          <h2>jQuery</h2>
+          <br>
+          <b> A JS library for developing web pages</b>
+          <center><button class="buttonbox">Learn jQuery</button></center>
+        </center>
+      </div>
+      <div id="Java">
+        <center>
+          <h2>Java</h2>
+          <br>
+          <b> A programming language</b>
+          <center><button class="buttonbox">Learn Java</button></center>
+        </center>
+      </div>
+      <div id="C">
+        <center>
+          <h2>C++</h2>
+          <br>
+          <b>A programming language</b>
+          <center><button class="buttonbox">Learn C++</button></center>
+        </center>
+      </div>
+      <div id="w3">
+        <center>
+          <h2>W3.CSS</h2>
+          <br>
+          <b>A CSS framework for faster and better responsive web pages</b>
+          <center><button class="buttonbox"> Learn W3.CSS</button></center>
+        </center>
+      </div>
+      <div id="Bootstrap">
+        <center>
+          <h2>Bootstrap</h2>
+          <br>
+          <b>A CSS framework for designing better web pages</b>
+          <center><button class="buttonbox">Learn Bootstrap</button></center>
+        </center>
+      </div>
+  
+      <div class="lang">
+        <center><h1>C</h1></center>
+      </div>
+      <div class="lang" style="background-color: rgb(255, 255, 158)">
+        <center><h1>C++</h1></center>
+      </div>
+  
+      <div class="box" style="background-color: rgb(250, 250, 250)">
+        <center>
+          <h1>R</h1>
+        </center>
+      </div>
+      <div class="box" style="background-color: rgb(158, 202, 234)">
+        <center>
+          <h1>Kotlin</h1>
+        </center>
+      </div>
+      <div class="box" style="background-color: pink">
+        <center>
+          <h1>Node.js</h1>
+        </center>
+      </div>
+      <div class="box" style="background-color: rgb(174, 181, 187)">
+        <center>
+          <h1>React</h1>
+        </center>
+      </div>
+      <div class="box" style="background-color: rgb(255, 255, 157)">
+        <center>
+          <h1>JSON</h1>
+        </center>
+      </div>
+      <div class="box" style="background-color: rgb(144, 162, 175)">
+        <center>
+          <h1>Vue</h1>
+        </center>
+      </div>
+      <div class="box" style="background-color: rgb(175, 255, 198)">
+        <center>
+          <h1>MySQL</h1>
+        </center>
+      </div>
+      <div class="box" style="background-color: rgb(252, 195, 255)">
+        <center>
+          <h1>XML</h1>
+        </center>
+      </div>
+      <div class="box" style="background-color: rgb(187, 242, 255)">
+        <center>
+          <h1>Sass</h1>
+        </center>
+      </div>
+      <div class="box" style="background-color: rgb(255, 246, 177)">
+        <center>
+          <h1>Icons</h1>
+        </center>
+      </div>
+      <div class="box" style="background-color: rgb(255, 177, 177)">
+        <center>
+          <h1>RWD</h1>
+        </center>
+      </div>
+      <div class="box" style="background-color: rgb(218, 175, 245)">
+        <center>
+          <h1>Graphics</h1>
+        </center>
+      </div>
+      <div class="box" style="background-color: rgb(149, 180, 203)">
+        <center>
+          <h1>SVG</h1>
+        </center>
+      </div>
+      <div class="box" style="background-color: rgb(223, 255, 163)">
+        <center>
+          <h1>Canvas</h1>
+        </center>
+      </div>
+      <div class="box" style="background-color: rgb(236, 201, 255)">
+        <center>
+          <h1>Raspberry Pi</h1>
+        </center>
+      </div>
+      <div class="box" style="background-color: rgb(146, 172, 191)">
+        <center>
+          <h1>Cyber Security</h1>
+        </center>
+      </div>
+      <div class="box" style="background-color: rgb(240, 255, 184)">
+        <center>
+          <h1>Colors</h1>
+        </center>
+      </div>
+      <div class="box" style="background-color: rgb(234, 186, 213)">
+        <center>
+          <h1>Git</h1>
+        </center>
+      </div>
+      <div class="box" style="background-color: rgb(222, 255, 185)">
+        <center>
+          <h1>Matloptib</h1>
+        </center>
+      </div>
+      <div class="box" style="background-color: rgb(237, 174, 174)">
+        <center>
+          <h1>NumPY</h1>
+        </center>
+      </div>
+      <div class="box" style="background-color: rgb(172, 174, 249)">
+        <center>
+          <h1>Pandas</h1>
+        </center>
+      </div>
+      <div class="box" style="background-color: rgb(245, 169, 255)">
+        <center>
+          <h1>SciPy</h1>
+        </center>
+      </div>
+      <div class="box" style="background-color: rgb(244, 255, 160)">
+        <center>
+          <h1>ASP</h1>
+        </center>
+      </div>
+      <div class="box" style="background-color: rgb(179, 210, 234)">
+        <center>
+          <h1>AngularJS</h1>
+        </center>
+      </div>
+      <div class="box" style="background-color: rgb(251, 249, 182)">
+        <center>
+          <h1>AppML</h1>
+        </center>
+      </div>
+      <div class="box" style="background-color: rgb(250, 178, 178)">
+        <center>
+          <h1>Go</h1>
+        </center>
+      </div>
+      <div class="box" style="background-color: rgb(253, 245, 197)">
+        <center>
+          <h1>TypeScript</h1>
+        </center>
+      </div>
+      <div class="box" style="background-color: rgb(183, 224, 255)">
+        <center>
+          <h1>Django</h1>
+        </center>
+      </div>
+      <div class="box" style="background-color: rgb(246, 255, 184)">
+        <center>
+          <h1>MangoDB</h1>
+        </center>
+      </div>
+      <div class="box" style="background-color: rgb(215, 195, 255)">
+        <center>
+          <h1>Statistics</h1>
+        </center>
+      </div>
+      <div class="box" style="background-color: rgb(236, 196, 196)">
+        <center>
+          <h1>Data Science</h1>
+        </center>
+      </div>
+      <div class="box" style="background-color: rgb(222, 241, 183)">
+        <center>
+          <h1>Typing Speed</h1>
+        </center>
+      </div>
+      <div class="box" style="background-color: rgb(243, 197, 219)">
+        <center>
+          <h1>How To</h1>
+        </center>
+      </div>
+      <div class="box" style="background-color: rgb(255, 195, 214)">
+        <center>
+          <h1>Code Game</h1>
+        </center>
+      </div>
+      <div class="box" style="background-color: rgb(254, 182, 213)">
+        <center>
+          <h1>Spaces</h1>
+        </center>
+      </div>
+      <div class="box" style="background-color: rgb(207, 233, 252)">
+        <center>
+          <h1>PostgreSQL</h1>
+        </center>
+      </div>
+  
+      <div class="lang" style="background-color: rgb(176, 255, 255)">
+        <center><h1>Excel</h1></center>
+      </div>
+      <div class="lang" style="background-color: rgb(255, 255, 158)">
+        <center><h1>DSA-Data Structures and Algorithms</h1></center>
+      </div>
+      <div class="lang" style="background-color: pink">
+        <center><h1>Machine Learning</h1></center>
+      </div>
+      <div class="lang" style="background-color: rgb(212, 238, 233)">
+        <center><h1>Artificial Intelligence</h1></center>
+      </div>
+
+
+    </header>
+  </body>
+</html>

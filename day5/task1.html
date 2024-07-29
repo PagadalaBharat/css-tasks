@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      td {
+        width: 50px;
+        height: 50px;
+        background-color: rgb(255, 255, 255);
+        /* border: 2px solid black; */
+      }
+      .even td:nth-child(even) {
+        background-color: rgb(6, 6, 6);
+      }
+      .odd td:nth-child(odd) {
+        background-color: rgb(0, 0, 0);
+      }
+      table {
+        background-color: black;
+      }
+      .odd td:hover:nth-child(n) {
+        background-color: blueviolet;
+      }
+      .even td:hover:nth-child(n) {
+        background-color: rgb(243, 20, 165);
+      }
+      .odd td:hover:nth-child(4n) {
+        background-color: rgb(255, 173, 143);
+      }
+      .even td:hover:nth-child(2n) {
+        background-color: brown;
+      }
+      .even td:hover:nth-child(3n) {
+        background-color: rgb(151, 236, 78);
+      }
+      td {
+        font-size: 20px;
+        color: white;
+        padding-left: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <table>
+        <!-- <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr> -->
+
+        <tr class="odd">
+          <td>&#9814;</td>
+          <td>&#9816;</td>
+          <td>&#9815;</td>
+          <td>&#9812;</td>
+          <td>&#9813;</td>
+          <td>&#9815;</td>
+          <td>&#9816;</td>
+          <td>&#9814;</td>
+        </tr>
+        <tr class="even">
+          <td>&#9817;</td>
+          <td>&#9817;</td>
+          <td>&#9817;</td>
+          <td>&#9817;</td>
+          <td>&#9817;</td>
+          <td>&#9817;</td>
+          <td>&#9817;</td>
+          <td>&#9817;</td>
+        </tr>
+        <tr class="odd">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="even">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="odd">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="even">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="odd">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="even">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>
