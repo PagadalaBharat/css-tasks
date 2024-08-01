@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      nav {
+          background-color: blueviolet;
+          
+                  height: 40px;
+      }
+      a {
+        text-decoration: none;
+      }
+      nav a h3 {
+        color: rgb(255, 0, 0);
+        display: inline-block;
+        padding: 10px;
+      }
+      #bvrt {
+       margin-left: 20px;
+      }
+      nav>a>h3{
+        /* why child selector is applying for sub child (div element) */
+        
+        padding-left: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+        <a href="#" ><h3 id="bvrt">BVRT CONSTRUCTIONS</h3></a>
+
+        </div>
+        <a href="#"><h3>P R O J E C T S</h3></a>
+        <a href="#"><h3>B R A N C H E S</h3></a>
+        <a href="#" ><h3>C O N T A C T</h3></a>
+      </nav>
+    </header>
+  </body>
+</html>
