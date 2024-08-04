@@ -19,20 +19,11 @@
         position: relative;
         top: 30px;
         left: 10%;
-        /* border-radius: 50px; */
-
-        /* transform: translate(-50%,-50%); */
-        /* text-align: center; */
-        /* overflow: hidden;
-        overflow-y: scroll; */
       }
       .bg img {
         position: absolute;
-        /* top: 0px; */
         width: 400px;
         height: 600px;
-        /* z-index: -2; */
-        /* border-radius: 50px; */
       }
       .topbar p {
         position: absolute;
@@ -40,8 +31,7 @@
         top: -15px;
         height: 20px;
         width: 97%;
-
-        /* border-radius: 90px; */
+        
         color: white;
         background-color: #054d44;
         padding-left: 10px;
@@ -90,6 +80,12 @@
         top: 25px;
         left: 50px;
       }
+      .bar img:hover{
+        width: 200px;
+        height: 200px;
+        z-index: 3;
+        border-radius: 100%;
+      }
       .bar h3 {
         color: white;
         font-family: Arial, Helvetica, sans-serif;
@@ -132,176 +128,51 @@
         font-size: 15px;
         color: red;
       }
-      .main2 {
+
+      .chat {
         position: relative;
         top: 70px;
         height: 530px;
 
         overflow: hidden;
         overflow-y: scroll;
+        scrollbar-width: none;
       }
+      .right {
+        background-color: #e1fdc7;
 
-      #date1 h4 {
-        top: 50px;
-        position: absolute;
-        display: inline;
-        
-        background-color: #d4eaf4;
-        color: #686969;
-        padding: 10px;
-        border-radius: 10px;
-        right: 40%;
-      }
-
-   
-      #text1 {
-        position: absolute;
-        z-index: 1;
-        background-color: rgb(255, 255, 255);
-        top: 100px;
-        padding: 0px 5px;
-        left: 0px;
-        border-radius: 15px;
-      }
-      #text2 {
-        position: absolute;
-        z-index: 1;
-        background-color: rgb(255, 255, 255);
-        top: 160px;
-        padding: 0px 5px;
-        left: 0px;
-        border-radius: 15px;
-      }
-      #text3 {
-        position: absolute;
-        z-index: 1;
-        background-color: #e1fdc7;
-        top: 200px;
-        padding: 0px 10px;
-        right: 0px;
-        border-radius: 15px;
-      }
-      #text4 {
-        position: absolute;
-        z-index: 1;
-        background-color: #e1fdc7;
-        top: 260px;
-        padding: 0px 10px;
-        right: 0px;
-        border-radius: 15px;
-      }
-      #text5 {
-        position: absolute;
-        z-index: 1;
-        background-color: #ffffff;
-        top: 300px;
-        padding: 0px 10px;
-        left: 0px;
-        border-radius: 15px;
-      }
-      #text6 {
-        position: absolute;
-        z-index: 1;
-        background-color: #e1fdc7;
-        top: 350px;
-        padding: 0px 10px;
-        right: 0px;
-        border-radius: 15px;
-      }
-      #text7 {
-        position: absolute;
-        z-index: 1;
-        background-color: #ffffff;
-        top: 400px;
-        padding: 0px 10px;
-        left: 0px;
-        border-radius: 15px;
-      }
-      #text8 {
-        position: absolute;
-        z-index: 1;
-        background-color: #e1fdc7;
-        top: 450px;
-        padding: 0px 10px;
-        right: 0px;
-        border-radius: 15px;
-      }
-      #text9 {
-        position: absolute;
-        z-index: 1;
-        background-color: #ffffff;
-        top: 550px;
-        padding: 0px 10px;
-        left: 0px;
-        border-radius: 15px;
-      }
-      #text10 {
-        position: absolute;
-        z-index: 1;
-        background-color: #e1fdc7;
-        top: 600px;
-        /* bottom: 0; */
-        padding: 0px 10px;
-        right: 0px;
-        border-radius: 15px;
-      }
-      #text11 {
-        position: absolute;
-        z-index: 1;
-        background-color: #ffffff;
-        top: 650px;
-        padding: 0px 10px;
-        left: 0px;
-        border-radius: 15px;
-      }
-      #text12 {
-        position: absolute;
-        z-index: 1;
-        background-color: #e1fdc7;
-        top: 700px;
-        /* bottom: 0; */
-        padding: 0px 10px;
-        right: 0px;
-        border-radius: 15px;
-      }
-      /* #date2 h4 {
-        position: absolute;
-        background-color: #d4eaf4;
-        color: #686969;
-        padding: 10px;
-        border-radius: 10px;
-        top: 480px;
-        right: 40%;
-      } */
-      #text13 {
-        position: absolute;
-        z-index: 1;
-        background-color: #ffffff;
-        top: 750px;
-        padding: 0px 10px;
-        left: 0px;
-        border-radius: 15px;
-      }
-      #text14 {
-        position: absolute;
-        z-index: 1;
-        background-color: #e1fdc7;
-        top: 800px;
-        padding: 0px 10px;
-        right: 0px;
-        border-radius: 15px;
-      }
-
-    h4{
-        position: sticky;
         z-index: 2;
-        top: 10px;
-        background-color: rgb(91, 175, 248);
-        width: 20%;
+        width: 90px;
+        padding: 10px;
         border-radius: 20px;
-        margin: auto;
+        margin: 10px 0px;
+        /* display: flex;
+        align-self: flex-end;
+         */
+        margin-left: 288px;
+      }
+      .left {
+        background-color: #ffffff;
+        /* position: absolute; */
+        z-index: 2;
+        width: 90px;
+        padding: 10px;
+        border-radius: 20px;
+        margin: 10px 0px;
+      }
+      .date {
+        background-color: #d0e2e8;
+        width: 90px;
+        padding: 10px;
+        border-radius: 20px;
+        margin: 10px 0px;
         text-align: center;
-        
+        margin-left: 34%;
+        position: sticky;
+        top: 0%;
+      }
+      video {
+        width: 240px;
       }
     </style>
   </head>
@@ -329,7 +200,7 @@
             src="https://img.freepik.com/premium-photo/portrait-successful-programmer-game-developer-coder-guy-uses-computer-laptop-work-game-design-hacker-boy-generative-ai-cyber-gamer_117038-7605.jpg"
             alt=""
           />
-          <h3>Future Developers</h3>
+          <h3>Future Developerr</h3>
           <h5>online</h5>
           <div class="heart">
             <i class="fa-solid fa-heart"></i>
@@ -345,58 +216,89 @@
           </div>
         </div>
       </header>
-      <main>
-        <div class="main2">
-          <h4 >July 28</h4>
-          <!-- <div id="date1">
-          </div> -->
-            <div id="text1">
-              <p>hii ra</p>
-            </div>
-            <div id="text2">
-              <p>Em Chesthunnavu</p>
-            </div>
-            <div id="text3">
-              <p>hi ra</p>
-            </div>
-            <div id="text4">
-              <p>ntng ra</p>
-            </div>
-            <div id="text5">
-              <p>have you completed the task</p>
-            </div>
-            <div id="text6">
-              <p>yes i have completed</p>
-            </div>
-            <div id="text7">
-              <p>can you please explain me</p>
-            </div>
-            <div id="text8">
-              <p>sure dear</p>
-            </div>
-            <h4 id="date2">july 29</h4>
-            <!-- <div id="date2">
-          </div> -->
-          <div id="text9">
-            <p>inka anti sangathulu</p>
-          </div>
-          <div id="text10">
-            <p>em le ra</p>
-          </div>
-          <div id="text11">
-            <p>tinnava</p>
-          </div>
-          <div id="text12">
-            <p>ledu ra nv</p>
-          </div>
-          <div id="text13">
-            <p>ha ra tinna</p>
-          </div>
-          <div id="text14">
-            <p>bayatiki podhm osthava</p>
-          </div>
+
+      <div class="chat">
+        <div class="date"><span>july 28th</span></div>
+        <div class="right"><span>hiii ra</span></div>
+
+        <div class="left"><span>hi ra</span></div>
+        <div class="right"><span>task complete</span></div>
+        <div class="right"><span>chesava</span></div>
+
+        <div class="left"><span>ha ra </span></div>
+
+        <div class="right"><span>avunna </span></div>
+
+        <div class="right"><span>nadhe inka kaleda ithy</span></div>
+        <div class="date"><span>july 29th</span></div>
+
+        <div class="left"><span>nv topper bro chesthavu </span></div>
+        <div class="right"><span>ni task pampu chestha</span></div>
+        <video src="chess.mp4" controls></video>
+        <div class="left"><span>chudu ewwwww</span></div>
+
+        <div class="right"><span>wow good ra </span></div>
+
+        <div class="left"><span>ewwww mamul vundadhu</span></div>
+
+        <div class="right"><span>ante le toppers ga</span></div>
+        <div class="right"><span>konchm chpu naku</span></div>
+
+        <div class="left"><span>ha ra zoom meet ki ra</span></div>
+        <div class="right"><span>osthunna inka pampu</span></div>
+
+        <div class="left">
+          <span><a href="#"> zoom meet</a></span>
         </div>
-      </main>
+        <div class="date"><span>july 30th</span></div>
+
+        <div class="right"><span>good explaination bro </span></div>
+
+        <div class="left"><span>tq ra</span></div>
+
+        <div class="right"><span>nv developer kadu teacher ipo</span></div>
+        <div class="right"><span>settuu vunthdi</span></div>
+
+        <div class="left"><span>hahaha</span></div>
+        <div class="right"><span>nijm ra ayya</span></div>
+
+        <div class="left"><span>sare ra </span></div>
+
+        <div class="right"><span>good boy</span></div>
+
+        <div class="left"><span>haa</span></div>
+        <div class="date"><span>Aug 1st</span></div>
+
+        <div class="right"><span>tinnava topper</span></div>
+        <div class="left">
+          <span>tinnava ante ipothundi ga topper enduku</span>
+        </div>
+        <div class="right"><span>style</span></div>
+        <div class="right"><span>ni name topper a ga ra</span></div>
+
+        <div class="left"><span>nii mokhm ra</span></div>
+
+        <div class="right"><span>a ukoo</span></div>
+
+        <div class="right">
+          <span>sir chepaka mundhe chesthunnavu anni </span>
+        </div>
+
+        <div class="left"><span>mamul vundadhu mari</span></div>
+        <div class="right"><span>anduke nv topper</span></div>
+
+        <div class="left"><span>sare gani nii lodo task video pampu</span></div>
+
+        <div class="right"><span>ha 1sec</span></div>
+        <video src="lodo.mp4" style="margin-left: 150px" controls></video>
+        <div class="left"><span>aslu mamul ledu ra ayya </span></div>
+        <div class="date"><span>Aug 2nd</span></div>
+
+        <div class="right"><span>ha chala time pattindi ra </span></div>
+        <div class="right"><span>503 table cells tesukoni chesa</span></div>
+
+        <div class="left"><span>vamooooo</span></div>
+      </div>
     </div>
   </body>
 </html>
