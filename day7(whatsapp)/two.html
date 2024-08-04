@@ -19,20 +19,11 @@
         position: relative;
         top: 30px;
         left: 10%;
-        /* border-radius: 50px; */
-
-        /* transform: translate(-50%,-50%); */
-        /* text-align: center; */
-        /* overflow: hidden;
-        overflow-y: scroll; */
       }
       .bg img {
         position: absolute;
-        /* top: 0px; */
         width: 400px;
         height: 600px;
-        /* z-index: -2; */
-        /* border-radius: 50px; */
       }
       .topbar p {
         position: absolute;
@@ -40,8 +31,7 @@
         top: -15px;
         height: 20px;
         width: 97%;
-
-        /* border-radius: 90px; */
+        
         color: white;
         background-color: #054d44;
         padding-left: 10px;
@@ -90,6 +80,12 @@
         top: 25px;
         left: 50px;
       }
+      .bar img:hover{
+        width: 200px;
+        height: 200px;
+        z-index: 3;
+        border-radius: 100%;
+      }
       .bar h3 {
         color: white;
         font-family: Arial, Helvetica, sans-serif;
@@ -132,38 +128,52 @@
         font-size: 15px;
         color: red;
       }
-      .main2 {
+
+      .chat {
         position: relative;
         top: 70px;
         height: 530px;
 
         overflow: hidden;
         overflow-y: scroll;
+        scrollbar-width: none;
       }
-      .chat{
-        position: relative;
-        top: 70px;
+      .right {
+        background-color: #e1fdc7;
+
+        z-index: 2;
+        width: 90px;
+        padding: 10px;
+        border-radius: 20px;
+        margin: 10px 0px;
+        /* display: flex;
+        align-self: flex-end;
+         */
+        margin-left: 288px;
       }
-      .right{
-        background-color: #9dd4ce;
+      .left {
+        background-color: #ffffff;
         /* position: absolute; */
         z-index: 2;
         width: 90px;
-      padding: 10px;
-      border-radius: 20px;
-      margin: 10px 0px;
+        padding: 10px;
+        border-radius: 20px;
+        margin: 10px 0px;
       }
-      .left{
-        background-color: #8aff4f;
-        /* position: absolute; */
-        z-index: 2;
+      .date {
+        background-color: #d0e2e8;
         width: 90px;
-      padding: 10px;
-      border-radius: 20px;
-      margin: 10px 0px;
-      align-self:flex-end
+        padding: 10px;
+        border-radius: 20px;
+        margin: 10px 0px;
+        text-align: center;
+        margin-left: 34%;
+        position: sticky;
+        top: 0%;
       }
-     
+      video {
+        width: 240px;
+      }
     </style>
   </head>
 
@@ -190,7 +200,7 @@
             src="https://img.freepik.com/premium-photo/portrait-successful-programmer-game-developer-coder-guy-uses-computer-laptop-work-game-design-hacker-boy-generative-ai-cyber-gamer_117038-7605.jpg"
             alt=""
           />
-          <h3>Future Developers</h3>
+          <h3>Future Developerr</h3>
           <h5>online</h5>
           <div class="heart">
             <i class="fa-solid fa-heart"></i>
@@ -206,34 +216,89 @@
           </div>
         </div>
       </header>
-      
-        <div class="chat">
-          <div class="right"><span>hi</span></div>
-          <div class="left"><span>hi</span></div>
-          <div class="right"><span>hi</span></div>
-          <div class="right"><span>hi</span></div>
 
-          <div class="left"><span>hi</span></div>
+      <div class="chat">
+        <div class="date"><span>july 28th</span></div>
+        <div class="right"><span>hiii ra</span></div>
 
-          <div class="right"><span>hi</span></div>
+        <div class="left"><span>hi ra</span></div>
+        <div class="right"><span>task complete</span></div>
+        <div class="right"><span>chesava</span></div>
 
-          <div class="right"><span>hi</span></div>
+        <div class="left"><span>ha ra </span></div>
 
-          <div class="left"><span>hi</span></div>
-          <div class="right"><span>hi</span></div>
+        <div class="right"><span>avunna </span></div>
 
-          <div class="left"><span>hi</span></div>
+        <div class="right"><span>nadhe inka kaleda ithy</span></div>
+        <div class="date"><span>july 29th</span></div>
 
-          <div class="right"><span>hi</span></div>
+        <div class="left"><span>nv topper bro chesthavu </span></div>
+        <div class="right"><span>ni task pampu chestha</span></div>
+        <video src="chess.mp4" controls></video>
+        <div class="left"><span>chudu ewwwww</span></div>
 
-          <div class="left"><span>hi</span></div>
+        <div class="right"><span>wow good ra </span></div>
 
-          <div class="right"><span>hi</span></div>
+        <div class="left"><span>ewwww mamul vundadhu</span></div>
 
-            
+        <div class="right"><span>ante le toppers ga</span></div>
+        <div class="right"><span>konchm chpu naku</span></div>
+
+        <div class="left"><span>ha ra zoom meet ki ra</span></div>
+        <div class="right"><span>osthunna inka pampu</span></div>
+
+        <div class="left">
+          <span><a href="#"> zoom meet</a></span>
         </div>
-      
-      
+        <div class="date"><span>july 30th</span></div>
+
+        <div class="right"><span>good explaination bro </span></div>
+
+        <div class="left"><span>tq ra</span></div>
+
+        <div class="right"><span>nv developer kadu teacher ipo</span></div>
+        <div class="right"><span>settuu vunthdi</span></div>
+
+        <div class="left"><span>hahaha</span></div>
+        <div class="right"><span>nijm ra ayya</span></div>
+
+        <div class="left"><span>sare ra </span></div>
+
+        <div class="right"><span>good boy</span></div>
+
+        <div class="left"><span>haa</span></div>
+        <div class="date"><span>Aug 1st</span></div>
+
+        <div class="right"><span>tinnava topper</span></div>
+        <div class="left">
+          <span>tinnava ante ipothundi ga topper enduku</span>
+        </div>
+        <div class="right"><span>style</span></div>
+        <div class="right"><span>ni name topper a ga ra</span></div>
+
+        <div class="left"><span>nii mokhm ra</span></div>
+
+        <div class="right"><span>a ukoo</span></div>
+
+        <div class="right">
+          <span>sir chepaka mundhe chesthunnavu anni </span>
+        </div>
+
+        <div class="left"><span>mamul vundadhu mari</span></div>
+        <div class="right"><span>anduke nv topper</span></div>
+
+        <div class="left"><span>sare gani nii lodo task video pampu</span></div>
+
+        <div class="right"><span>ha 1sec</span></div>
+        <video src="lodo.mp4" style="margin-left: 150px" controls></video>
+        <div class="left"><span>aslu mamul ledu ra ayya </span></div>
+        <div class="date"><span>Aug 2nd</span></div>
+
+        <div class="right"><span>ha chala time pattindi ra </span></div>
+        <div class="right"><span>503 table cells tesukoni chesa</span></div>
+
+        <div class="left"><span>vamooooo</span></div>
+      </div>
     </div>
   </body>
 </html>
