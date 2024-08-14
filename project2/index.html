@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon.in</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0px;
+        border: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #e2e7eb;
+      }
+      header {
+        background-color: #131921;
+        width: 100%;
+        display: flex;
+        color: white;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      header img {
+        width: 115px;
+        height: 60px;
+      }
+      .location {
+        display: flex;
+        flex-direction: column;
+        margin: 5px 2px 5px 20px;
+        gap: 4px;
+      }
+      #locationlogo span i {
+        margin-left: -15px;
+      }
+      .location > span {
+        color: rgba(204, 204, 204, 0.7);
+      }
+      .search summary {
+        background-color: #e6e6e6;
+        color: black;
+        padding: 10px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        margin-right: 2px;
+      }
+      .search {
+        display: flex;
+        margin-left: 20px;
+      }
+      .search input {
+        width: 40em;
+      }
+      .search i {
+        background-color: #febd69;
+        color: black;
+        width: 35px;
+        padding-left: 8px;
+        font-size: 20px;
+        padding-top: 10px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        margin-left: 1px;
+
+        /* align-self: center; */
+      }
+      .lang {
+        display: flex;
+        margin-left: 20px;
+      }
+      .lang img {
+        width: 25px;
+        height: 18px;
+        padding-right: 3px;
+      }
+      .signin {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+      }
+      .signin > span {
+        font-size: 12px;
+      }
+      nav a {
+        text-decoration: none;
+        color: white;
+        padding-left: 20px;
+      }
+      .header2 > div {
+        display: flex;
+        color: white;
+        height: 2.5em;
+        align-items: center;
+      }
+      .header2 {
+        background-color: #262f3e;
+        display: flex;
+        justify-content: space-around;
+      }
+      .header2 > div > img {
+        height: 2.2em;
+      }
+      .hero {
+        background-image: url("hero.jpg");
+        width: 100%;
+        height: 90vh;
+        background-size: cover;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+        padding: 20px;
+
+        /* display: flex;
+
+        align-items: flex-end; */
+
+        /* position: relative; */
+      }
+      .container {
+        /* width: 26%; */
+        height: 420px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-evenly;
+        padding-left: 10px;
+
+        /* position: absolute;
+        top: 40px;
+        left: 40px; */
+      }
+      .p {
+        padding-top: 20%;
+        /* padding-left: 7%; */
+      }
+      .phoneimg {
+        display: flex;
+        column-gap: 10px;
+        padding-right: 10px;
+      }
+      .phoneimg img {
+        width: 160px;
+        height: 100px;
+      }
+      .signin2 {
+        background-color: white;
+        height: 100px;
+      }
+      .signin2 button {
+        width: 80%;
+        border-radius: 10px;
+        background-color: #ffd814;
+        height: 30px;
+      }
+
+      .signin2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .signin2 h2 {
+        padding-left: 20px;
+      }
+      .section2 {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        padding: 0px 20px;
+      }
+
+      .p2 {
+        padding-top: 8%;
+      }
+      .section3 {
+        background-color: white;
+        height: 40vh;
+        margin: 20px;
+        padding: 20px;
+      }
+      .section3a {
+        display: flex;
+      }
+      .barimgs {
+        display: flex;
+        gap: 10px;
+        justify-content: space-evenly;
+        /* padding-top: 5px; */
+      }
+      .section4 {
+        margin-top: -100px;
+        display: flex;
+        flex-direction: row;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- amazonlogo -->
+      <img src="amazon_logo.png" alt="" />
+      <!-- this div is for location in header -->
+      <div class="location">
+        <span>Delivering to hyderabad 500001</span>
+        <div id="locationlogo">
+          <span><i class="fa-solid fa-location-dot"></i></span>
+          <span>Update Location</span>
+        </div>
+      </div>
+      <!-- location div ended -->
+      <!-- search bar div started -->
+      <div class="search">
+        <details>
+          <summary>All</summary>
+        </details>
+        <input type="text" placeholder="Search amazon.in" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <!-- search bar div is ended -->
+      <!-- lang div started -->
+      <div class="lang">
+        <img src="flag-of-india.jpg" alt="" />
+        <details>
+          <summary>EN</summary>
+        </details>
+      </div>
+      <!-- lang div ended -->
+      <!-- signin and returns div starting -->
+      <div class="signin">
+        <span>Hello,Sign.in</span>
+        <div>
+          <span><strong>Account & List</strong></span>
+        </div>
+      </div>
+      <div class="signin">
+        <span>Return</span>
+        <div>
+          <span><strong>& Orders</strong></span>
+        </div>
+      </div>
+      <!-- signin and returns div ending-->
+      <!-- Cart started-->
+      <div class="cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <strong>Cart</strong>
+      </div>
+      <!-- cart ended -->
+    </header>
+    <!-- header2 section started -->
+    <section class="header2">
+      <div>
+        <div>
+          <i class="fa-solid fa-bars"></i>
+          <span><strong>All</strong></span>
+        </div>
+        <nav>
+          <a href="#">Fresh</a>
+          <a href="#">Amazon miniTV</a>
+          <a href="#">Sell</a>
+          <a href="#">Best Sellers</a>
+          <a href="#">Today's Deals</a>
+          <a href="#">Mobiles</a>
+          <a href="#">Prime</a>
+          <a href="#">Customers Services</a>
+          <a href="#">Electronics</a>
+          <a href="#">Fashion </a>
+          <a href="#">New Releases</a>
+        </nav>
+      </div>
+      <div>
+        <img src="Screenshot 2024-08-11 230139.png" alt="" />
+      </div>
+    </section>
+    <!-- header2 section end -->
+    <!-- hero section started -->
+    <section class="hero">
+      <!-- all the container is in p div -->
+      <div class="p">
+        <div class="container">
+          <h2>Deals on smartphones that suits your budget</h2>
+          <div class="phoneimg">
+            <!-- phone1 2 3 4 images and text  -->
+            <div>
+              <img src="phone1.jpg" alt="" />
+              <p>budget under | $10,000</p>
+            </div>
+            <div>
+              <img src="phone2.jpg" alt="" />
+              <p>Mid range | $10,000 - $25,000</p>
+            </div>
+          </div>
+
+          <div class="phoneimg">
+            <div>
+              <img src="phone3.jpg" alt="" />
+              <p>Premium | $25,000 - $40,000</p>
+            </div>
+            <div>
+              <img src="phone4.jpg" alt="" />
+              <p>Ultra premium | Above $40,000</p>
+            </div>
+          </div>
+          <!-- phone1 2 3 4 images and text  -->
+          <a href="#"> See all offers</a>
+        </div>
+      </div>
+      <!-- ....... -->
+      <div class="p">
+        <div class="container">
+          <h2>Deals on smartphones that suits your budget</h2>
+          <div class="phoneimg">
+            <!-- phone1 2 3 4 images and text  -->
+            <div>
+              <img src="phone1.jpg" alt="" />
+              <p>budget under | $10,000</p>
+            </div>
+            <div>
+              <img src="phone2.jpg" alt="" />
+              <p>Mid range | $10,000-$25,000</p>
+            </div>
+          </div>
+
+          <div class="phoneimg">
+            <div>
+              <img src="phone3.jpg" alt="" />
+              <p>Premium | $25,000 - $40,000</p>
+            </div>
+            <div>
+              <img src="phone4.jpg" alt="" />
+              <p>Ultra premium | Above $40,000</p>
+            </div>
+          </div>
+          <!-- phone1 2 3 4 images and text  -->
+          <a href="#"> See all offers</a>
+        </div>
+      </div>
+      <!-- ....... -->
+      <div class="p">
+        <div class="container">
+          <h2>Deals on smartphones that suits your budget</h2>
+
+          <img style="width: 90%; height: 65%" src="greatindian.jpg" alt="" />
+
+          <a href="#"> See all offers</a>
+        </div>
+      </div>
+
+      <!-- ..................................................... -->
+      <!-- .....................height is not applying ......................-->
+      <div class="p" style="width: 32%">
+        <div class="signin2" class="height: 150px">
+          <h2>Sign in for your best experience</h2>
+          <button>signin Securely</button>
+        </div>
+      </div>
+    </section>
+    <!-- ............................section2 started................ -->
+    <section class="section2">
+      <div class="p2 secpad2">
+        <div class="container">
+          <h2>Deals on smartphones that suits your budget</h2>
+          <div class="phoneimg">
+            <!-- phone1 2 3 4 images and text  -->
+            <div>
+              <img src="phone1.jpg" alt="" />
+              <p>budget under | $10,000</p>
+            </div>
+            <div>
+              <img src="phone2.jpg" alt="" />
+              <p>Mid range | $10,000-$25,000</p>
+            </div>
+          </div>
+
+          <div class="phoneimg">
+            <div>
+              <img src="phone3.jpg" alt="" />
+              <p>Premium | $25,000 - $40,000</p>
+            </div>
+            <div>
+              <img src="phone4.jpg" alt="" />
+              <p>Ultra premium | Above $40,000</p>
+            </div>
+          </div>
+          <!-- phone1 2 3 4 images and text  -->
+          <a href="#"> See all offers</a>
+        </div>
+      </div>
+      <!-- ................ -->
+      <div class="p2">
+        <div class="container">
+          <h2>Deals on smartphones that suits your budget</h2>
+          <div class="phoneimg">
+            <!-- phone1 2 3 4 images and text  -->
+            <div>
+              <img src="phone1.jpg" alt="" />
+              <p>budget under | $10,000</p>
+            </div>
+            <div>
+              <img src="phone2.jpg" alt="" />
+              <p>Mid range | $10,000-$25,000</p>
+            </div>
+          </div>
+
+          <div class="phoneimg">
+            <div>
+              <img src="phone3.jpg" alt="" />
+              <p>Premium | $25,000 - $40,000</p>
+            </div>
+            <div>
+              <img src="phone4.jpg" alt="" />
+              <p>Ultra premium | Above $40,000</p>
+            </div>
+          </div>
+          <!-- phone1 2 3 4 images and text  -->
+          <a href="#"> See all offers</a>
+        </div>
+      </div>
+      <!-- ................................. -->
+      <div class="p2">
+        <div class="container">
+          <h2>Deals on smartphones that suits your budget</h2>
+          <div class="phoneimg">
+            <!-- phone1 2 3 4 images and text  -->
+            <div>
+              <img src="phone1.jpg" alt="" />
+              <p>budget under | $10,000</p>
+            </div>
+            <div>
+              <img src="phone2.jpg" alt="" />
+              <p>Mid range | $10,000-$25,000</p>
+            </div>
+          </div>
+
+          <div class="phoneimg">
+            <div>
+              <img src="phone3.jpg" alt="" />
+              <p>Premium | $25,000 - $40,000</p>
+            </div>
+            <div>
+              <img src="phone4.jpg" alt="" />
+              <p>Ultra premium | Above $40,000</p>
+            </div>
+          </div>
+          <!-- phone1 2 3 4 images and text  -->
+          <a href="#"> See all offers</a>
+        </div>
+      </div>
+      <!-- ............................. -->
+      <div class="p2">
+        <div class="container">
+          <h2>Deals on smartphones that suits your budget</h2>
+          <div class="phoneimg">
+            <!-- phone1 2 3 4 images and text  -->
+            <div>
+              <img src="phone1.jpg" alt="" />
+              <p>budget under | $10,000</p>
+            </div>
+            <div>
+              <img src="phone2.jpg" alt="" />
+              <p>Mid range | $10,000-$25,000</p>
+            </div>
+          </div>
+
+          <div class="phoneimg">
+            <div>
+              <img src="phone3.jpg" alt="" />
+              <p>Premium | $25,000 - $40,000</p>
+            </div>
+            <div>
+              <img src="phone4.jpg" alt="" />
+              <p>Ultra premium | Above $40,000</p>
+            </div>
+          </div>
+          <!-- phone1 2 3 4 images and text  -->
+          <a href="#"> See all offers</a>
+        </div>
+      </div>
+    </section>
+    <!-- secttion 2 ended -->
+    <!-- section 3 started -->
+    <section class="section3">
+      <div class="section3a">
+        <h2>
+          Up to 60% off | Inverter batteries, kitchen tools & more from local
+          stores nearby
+        </h2>
+        <a href="#">See more offers</a>
+      </div>
+      <div class="barimgs">
+        <img src="bar1.jpg" alt="" />
+        <img src="bar2.jpg" alt="" />
+        <!-- <img src="bar3.jpg" alt=""> -->
+        <img src="bar4.jpg" alt="" />
+        <img src="bar5.jpg" alt="" />
+        <img src="bar6.jpg" alt="" />
+        <img src="bar7.jpg" alt="" />
+        <!-- <img src="bar8.jpg" alt=""> -->
+      </div>
+    </section>
+    <!-- .................................new section 4................ -->
+    <section class="section2 section4">
+      <div class="p2">
+        <div class="container">
+          <h2>Deals on smartphones that suits your budget</h2>
+          <div class="phoneimg">
+            <!-- phone1 2 3 4 images and text  -->
+            <div>
+              <img src="phone1.jpg" alt="" />
+              <p>budget under | $10,000</p>
+            </div>
+            <div>
+              <img src="phone2.jpg" alt="" />
+              <p>Mid range | $10,000-$25,000</p>
+            </div>
+          </div>
+
+          <div class="phoneimg">
+            <div>
+              <img src="phone3.jpg" alt="" />
+              <p>Premium | $25,000 - $40,000</p>
+            </div>
+            <div>
+              <img src="phone4.jpg" alt="" />
+              <p>Ultra premium | Above $40,000</p>
+            </div>
+          </div>
+          <!-- phone1 2 3 4 images and text  -->
+          <a href="#"> See all offers</a>
+        </div>
+      </div>
+      <!-- ................ -->
+      <div class="p2">
+        <div class="container">
+          <h2>Deals on smartphones that suits your budget</h2>
+
+          <img style="width: 90%; height: 65%" src="s4box2.jpg" alt="" />
+
+          <a href="#"> See all offers</a>
+        </div>
+      </div>
+      <!-- ................................. -->
+      <div class="p2">
+        <div class="container">
+          <h2>Deals on smartphones that suits your budget</h2>
+
+          <img style="width: 90%; height: 65%" src="s4box3.jpg" alt="" />
+
+          <a href="#"> See all offers</a>
+        </div>
+      </div>
+      <!-- <div class="p2">
+    <div class="container">
+      <h2>Deals on smartphones that suits your budget</h2>
+      <div class="phoneimg">
+        ...............phone1 2 3 4 images and text ,,,,,,,,,,,,,,,,,,,,
+        <div>
+          <img src="phone1.jpg" alt="" />
+          <p>budget under | $10,000</p>
+        </div>
+        <div>
+          <img src="phone2.jpg" alt="" />
+          <p>Mid range | $10,000-$25,000</p>
+        </div>
+      </div>
+
+      <div class="phoneimg">
+        <div>
+          <img src="phone3.jpg" alt="" />
+          <p>Premium | $25,000 - $40,000</p>
+        </div>
+        <div>
+          <img src="phone4.jpg" alt="" />
+          <p>Ultra premium | Above $40,000</p>
+        </div>
+      </div>
+      ....................phone1 2 3 4 images and text ............................
+      <a href="#"> See all offers</a>
+    </div>
+  </div> -->
+      <!-- ............................. -->
+      <div class="p2">
+        <div class="container">
+          <h2>Deals on smartphones that suits your budget</h2>
+          <div class="phoneimg">
+            <!-- phone1 2 3 4 images and text  -->
+            <div>
+              <img src="phone1.jpg" alt="" />
+              <p>budget under | $10,000</p>
+            </div>
+            <div>
+              <img src="phone2.jpg" alt="" />
+              <p>Mid range | $10,000-$25,000</p>
+            </div>
+          </div>
+
+          <div class="phoneimg">
+            <div>
+              <img src="phone3.jpg" alt="" />
+              <p>Premium | $25,000 - $40,000</p>
+            </div>
+            <div>
+              <img src="phone4.jpg" alt="" />
+              <p>Ultra premium | Above $40,000</p>
+            </div>
+          </div>
+          <!-- phone1 2 3 4 images and text  -->
+          <a href="#"> See all offers</a>
+        </div>
+      </div>
+    </section>
+    <!-- section 3 is reused as section5 -->
+    <section class="section3">
+      <div class="section3a">
+        <h2>Best deals curated from stores nearby</h2>
+        <a href="#">See more offers</a>
+      </div>
+      <div class="barimgs">
+        <img src="s4img7.jpg" alt="" />
+        <img src="s5img2.jpg" alt="" />
+        <img src="s5img3.jpg" alt="" />
+        <img src="s5img4.jpg" alt="" />
+        <img src="s5img5.jpg" alt="" />
+        <img src="s5img6.jpg" alt="" />
+      </div>
+    </section>
+    <!-- ...............section 6 is started................ -->
+  </body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+      }
+      body{
+        background-image: url(music.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .main {
+        background-image: url(OIP.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        width: 300px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+      }
+      .main img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        animation-name: img;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes img {
+         from{
+
+         }
+         to{
+            transform: rotate(360deg);
+         }
+        
+      }
+      .bar {
+        width: 5px;
+        height: 10px;
+        background-color: aqua;
+        margin-top: 130px;
+      }
+      .boxmain {
+        display: flex;
+        column-gap: 2px;
+        justify-content: center;
+      }
+      .boxmain .box1 {
+       /* background-color: brown; */
+        animation-name: dabba1;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        
+
+    }
+    .boxmain .box2 {
+       /* background-color: brown; */
+        animation-name: dabba2;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-delay: 0.2s;
+        
+    }
+    .boxmain .box3 {
+       /* background-color: brown; */
+        animation-name: dabba3;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-delay: 0.5s;
+        
+    }
+    .boxmain .box4 {
+       /* background-color: brown; */
+        animation-name: dabba4;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-delay: 0.3s;
+        
+    }
+    .boxmain .box5 {
+       /* background-color: brown; */
+        animation-name: dabba5;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-delay: 0.1s;
+        
+    }
+    .boxmain .box6 {
+       /* background-color: brown; */
+        animation-name: dabba6;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-delay: 0.2s;
+        
+    }
+    .main audio{
+        width: 270px;
+    
+    }
+    
+    @keyframes dabba1 {
+        from{
+            transform: scaley(0px);
+            background-color: aqua;
+        }
+        to{
+            transform: scaley(3);
+            background-color: blue;
+        }
+
+
+    }
+    @keyframes dabba2 {
+        from{
+            transform: scaley(0px);
+            background-color: aqua;
+        }
+        to{
+            transform: scaley(5);
+            background-color: blue;
+        }
+        
+    }
+    
+            @keyframes dabba3 {
+                from{
+                transform: scaley(0px);
+                background-color: aqua;
+            }
+            to{
+                transform: scaley(3);
+                background-color: blue;
+            }
+        }
+        @keyframes dabba4 {
+                from{
+                transform: scaley(0px);
+                background-color: aqua;
+            }
+            to{
+                transform: scaley(4);
+                background-color: blue;
+            }
+        }
+        @keyframes dabba5 {
+                from{
+                transform: scaley(0px);
+                background-color: aqua;
+            }
+            to{
+                transform: scaley(6);
+                background-color: blue;
+            }
+        }
+        @keyframes dabba6 {
+                from{
+                transform: scaley(0px);
+                background-color: aqua;
+            }
+            to{
+                transform: scaley(3);
+                background-color: blue;
+            }
+        }
+        
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <img src="hanuman.jpeg" alt="" />
+      <div class="boxmain">
+        <div class="box1 bar"></div>
+        <div class="box2 bar"></div>
+        <div class="box3 bar"></div>
+        <div class="box4 bar"></div>
+        <div class="box5 bar"></div>
+        <div class="box6 bar"></div>
+        <div class="box1 bar"></div>
+        <div class="box2 bar"></div>
+        <div class="box3 bar"></div>
+        <div class="box4 bar"></div>
+        <div class="box5 bar"></div>
+        <div class="box6 bar"></div>
+      </div>
+      <div>
+        <audio
+          src="[iSongs.info] 01 - Hanuman Chalisa.mp3 "
+          controls
+          loop
+        ></audio>
+      </div>
+    </div>
+  </body>
+</html>

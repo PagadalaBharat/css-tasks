@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .button1:hover ~ img{
+            transform: translate(100px,100px);
+
+        }
+        .button2:hover ~ img{
+            transform: rotate(180deg);
+
+        }
+        .button3:hover ~ img{
+            transform: scale(1.5,1.5);
+
+        }
+        .button4:hover ~ img{
+            transform: skew(30deg,30deg);
+
+        }
+        img{
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+  </head>
+  <body>
+    <button class="button1">move</button>
+    <button class="button2">rotate</button>
+    <button class="button3">scale</button>
+    <button class="button4">skew</button>
+    <br><br><br><br>
+    <img src="IMG-20240503-WA0015.jpg" alt="">
+  </body>
+</html>
