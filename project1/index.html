@@ -4,8 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -415,6 +424,9 @@
         align-items: center;
         align-content: center;
       }
+      .screenshots2 {
+        display: none;
+      }
       .screenshots {
         color: white;
         display: flex;
@@ -423,17 +435,22 @@
         align-items: center;
         gap: 20px;
       }
-      .sssimg img{
-            width: 33%;
-            
-            height: 500px;
-          }
-          
-          .carousel{
-            margin:20%;
-        }
+      .sssimg img {
+        width: 33%;
 
-   
+        height: 500px;
+      }
+
+      .carousel {
+        margin: 20%;
+      }
+      .mobile {
+        display: none;
+      }
+      header span .fa-solid {
+        display: none;
+      }
+
       @media screen and (width<576px) {
         header div {
           margin-left: 25%;
@@ -442,6 +459,7 @@
         nav a {
           display: none;
         }
+
         .section1 {
           position: relative;
           width: 100%;
@@ -517,14 +535,41 @@
           margin-right: 0px;
           height: 300px;
         }
-        .carousel{
-            margin:20%;
-            width: 80%;
-            
+        .carousel {
+          margin: 20%;
+          width: 80%;
         }
-        .sssimg2{
+        .sssimg2 {
           display: none;
         }
+        .sssimg img {
+          display: none;
+        }
+        #carouselExampleIndicators {
+          display: none;
+        }
+        .screenshots2 {
+          color: white;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+        }
+        .screenshots2 img {
+          width: 150px;
+        }
+        .appheading {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .appheading p {
+          width: 90%;
+        }
+        header span .fa-solid {
+        display: block;
+      }
 
         /* .section4 .sssimg img {
           width: 120px;
@@ -535,7 +580,7 @@
           margin-bottom: 20px;
         }
         .screenshots p {
-          width:100%;
+          width: 100%;
         }
         .mainpricingbox {
           margin: 20px;
@@ -552,12 +597,43 @@
         .footer i {
           padding: 4px;
         }
+        header {
+          justify-content: space-between;
+          border: 2px solid;
+        }
+      
+        .mobile {
+          position: absolute;
+          display: none;
+          /* display: flex; */
+          flex-direction: column;
+          background-color: white;
+          height: 200px;
+          top: 30px;
+          right: 0px;
+
+          
+        }
+        .menus:focus~.mobile,.mobile:hover{
+          display: flex;
+        }
+
+        .mobile a{
+          text-decoration: none;
+          display: flex;
+          color: #80828e;
+          padding-top: 10px;
+
+        }
       }
     </style>
   </head>
   <body>
     <header>
       <div><span> APP </span> STARTER</div>
+      <span class="menus" tabindex="0">
+        <i class="fa-solid fa-bars" ></i>
+      </span>
       <nav class="nav">
         <a href="#">HOME</a>
         <a href="#">ABOUT</a>
@@ -566,6 +642,14 @@
         <a href="#">NEWSLETTER</a>
         <a href="#">CONTACT</a>
       </nav>
+      <div class="mobile">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">SCREENSHOTS</a>
+        <a href="#">PRICING</a>
+        <a href="#">NEWSLETTER</a>
+        <a href="#">CONTACT</a>
+      </div>
     </header>
     <main>
       <section class="section1">
@@ -645,15 +729,22 @@
         <button>LEARN MORE</button>
       </section>
       <section class="section4">
-        <!-- <div class="screenshots">
-          <h1>APP SCREENSHOTS</h1>
-          <p>
-            Nulla nis purus, ultrices et scelerisque at, ullamcorper et ex.
-            Phasellus at nisi lobortis, semper tortor sed, gravida neque.
-          </p>
-        </div> -->
+        <div class="screenshots2">
+          <div class="appheading">
+            <h1>APP SCREENSHOTS</h1>
+            <p>
+              Nulla nis purus, ultrices et scelerisque at, ullamcorper et ex.
+              Phasellus at nisi lobortis, semper tortor sed, gravida neque.
+            </p>
+          </div>
+          <div>
+            <img src="screenshot-img1.jpg" alt="" />
+            <img src="screenshot-img3.jpg" alt="" />
+            <img src="screenshot-img2.jpg" alt="" />
+          </div>
+        </div>
         <!-- ..................................bootstrap.................... -->
-        <div id="carouselExampleIndicators" class="carousel slide ">
+        <div id="carouselExampleIndicators" class="carousel slide">
           <div class="screenshots">
             <h1>APP SCREENSHOTS</h1>
             <p>
@@ -662,43 +753,64 @@
             </p>
           </div>
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-           </div>
-           <div class="carousel-inner">
-             <div class="carousel-item  sssimg">
-               <img src="screenshot-img1.jpg" class=" " alt="...">
-               <img src="screenshot-img2.jpg" class="" alt="...">
-               <img src="screenshot-img3.jpg" class="sssimg2" alt="...">
-               
-               
-               
-              </div>
-              <div class="carousel-item active sssimg">
-                 <img src="screenshot-img4.jpg" class="" alt="...">
-               <img src="screenshot-img5.jpg" class="" alt="...">
-               <img src="screenshot-img6.jpg" class="sssimg2" alt="...">
-  
-             </div>
-             <div class="carousel-item sssimg">
-              <img src="screenshot-img7.jpg" class="" alt="...">
-              <img src="screenshot-img8.jpg" class="" alt="...">
-              <img src="screenshot-img8.jpg" class="sssimg2" alt="...">
-              
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item sssimg">
+              <img src="screenshot-img1.jpg" class=" " alt="..." />
+              <img src="screenshot-img2.jpg" class="" alt="..." />
+              <img src="screenshot-img3.jpg" class="sssimg2" alt="..." />
             </div>
-             
-           </div>
-           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-             <span class="visually-hidden">Previous</span>
-           </button>
-           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-             <span class="visually-hidden">Next</span>
-           </button>
-         </div>
-            <!-- <div class="ssimg">
+            <div class="carousel-item active sssimg">
+              <img src="screenshot-img4.jpg" class="" alt="..." />
+              <img src="screenshot-img5.jpg" class="" alt="..." />
+              <img src="screenshot-img6.jpg" class="sssimg2" alt="..." />
+            </div>
+            <div class="carousel-item sssimg">
+              <img src="screenshot-img7.jpg" class="" alt="..." />
+              <img src="screenshot-img8.jpg" class="" alt="..." />
+              <img src="screenshot-img8.jpg" class="sssimg2" alt="..." />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- <div class="ssimg">
               <img src="screenshot-img5.jpg" alt="" />
           <img src="screenshot-img6.jpg" alt="" />
           <img src="screenshot-img7.jpg" alt="" />
